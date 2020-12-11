@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+import {BrowserRouter , Route, Switch} from 'react-router-dom'
+import Header from "../../cafeshka/src/comp/header";
+import Menu from "../../cafeshka/src/comp/menu"
+import Home from "../../cafeshka/src/comp/home"
+import './index.css'
+import DishDetails from "../../cafeshka/src/comp/dishDetails";
+const App = () => {
+    return (
+        <BrowserRouter >
+         <Header />
+         <Switch>
+             <Route exact path="/" component={()=> <Home />}/>
+             <Route exact path="/menu" component={()=> <Menu />}/>
+             <Route exact path="/menu/:id" component={()=> <DishDetails />}/>
+         </Switch>
+        </BrowserRouter>
+    );
+};
 
 export default App;

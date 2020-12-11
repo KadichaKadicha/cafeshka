@@ -1,13 +1,77 @@
-body {
+
+img{
+  width: 100%;
+}
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.hero{
+  height: 100vh;
+  background: linear-gradient( rgba(48, 44, 44, 0.8), rgba(0, 0, 0, 0.5) ),url("./img/purple-carrot-hero.jpg")no-repeat  center/cover;
+
+}
+.d-block{
+  background: #375734;
+
+}
+.sizeMy{
+  font-size: 26px;
+
+
+}
+.main{
+  padding-top: 50px;
+background: #282c34;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+   background: rgba(91, 186, 53, 0.3);
+}
+
+.title-hero{
+  font-family: 'Langar', cursive;
+  color: #e7ebef;
+  display: flex;
+  justify-content: center;
+ padding-top: 100px;
+  font-size: 40px;
+}
+.title2-hero{
+  font-family: 'Dancing Script', cursive;
+  color: #eea40f;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.navbar-brand{
+  font-size: 25px;
+  font-weight: bold;
+  color: red !important;
+  margin-left: 20px;
+text-decoration:  overline;
+}
+.nav-link{
+  color: red;
+  font-size: 18px;
+  margin-right: 20px;
+
+}
+.navbar{
+  background: #282c34;
+  display: flex;
+  justify-content: space-between;
+}
+.readMore{
+  color: #e7ebef;
+  text-decoration: none;
+}
+.card-title{
+  color: #e7ebef;
+
+}
+.dishMain{
+  height: 100vh;
+  background: #282c34;
 }
